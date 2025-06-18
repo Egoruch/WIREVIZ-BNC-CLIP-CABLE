@@ -1,0 +1,5 @@
+Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
+1	Cable, 2 x 0.25 mm²	0.4	m	C1		UL1007-24AWG		
+2	Connector, BNC Connector Male - Screw Terminal, male, 2 pins, BK	1		X_BNC_SCREW	PRC	20.135.1	grobotronics.com	39-00011844
+3	Connector, Test Clip Black Banana Connector, male, 1 pins, BK	1		X_CLIP_GND	Changzhou Amass Elec	20.135.2	lcsc.com	C99181
+4	Connector, Test Clip Red Banana Connectors, male, 1 pins, RD	1		X_CLIP_VCC	Changzhou Amass Elec	20.135.1	lcsc.com	C99180

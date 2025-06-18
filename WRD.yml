@@ -1,0 +1,78 @@
+metadata:
+
+  title: BNC <-> CLIPS
+  pn: DEV-CBL-001-R01
+
+  authors:
+    Created:
+      name: Refcircuit.Com
+      date: 2025-06-18
+    Approved:
+      name: Refcircuit.Com
+      date: 2025-06-18
+
+  revisions:
+    A:
+      name: Refcircuit.Com
+      date: 2025-06-18
+      changelog: Initial commit
+
+  template:
+    name: din-6771
+    sheetsize: A3
+
+connectors:
+
+  X_CLIP_VCC: &clip_t # https://lcsc.com/product-detail/Banana-Connectors-Alligator-Clips_Changzhou-Amass-Elec-20-135-1_C99180.html
+    pinlabels: [VCC]
+    type: Test Clip Red Banana Connectors
+    manufacturer: Changzhou Amass Elec
+    mpn: 20.135.1
+    supplier: lcsc.com
+    spn: C99180
+    subtype: male
+    color: RD
+    image:
+      src: IMG/20.135.1.png
+
+  X_CLIP_GND: # https://lcsc.com/product-detail/Banana-Connectors-Alligator-Clips_Changzhou-Amass-Elec-20-135-2_C99181.html
+    <<: *clip_t
+    pinlabels: [GND]
+    type: Test Clip Black Banana Connector
+    mpn: 20.135.2
+    spn: C99181
+    color: BK
+    image:
+      src: IMG/20.135.2.png
+
+  X_BNC_SCREW: # https://grobotronics.com/bnc-connector-male-screw-terminal.html
+    pinlabels: [VCC, GND]
+    type: BNC Connector Male - Screw Terminal
+    manufacturer: PRC
+    mpn: 20.135.1
+    supplier: grobotronics.com
+    spn: 39-00011844
+    subtype: male
+    color: BK
+    image:
+      src: IMG/BNC-SCREW-TERM-MALE.png
+
+cables:
+
+  C:
+    colors: [RD, BK] # number of wires implicit in color list
+    gauge: 0.25 mm2 # also accepts AWG as unit
+    show_equiv: true # auto-calculate AWG equivalent from metric gauge
+    length: 0.4 # length in m
+    shield: false
+    mpn: UL1007-24AWG
+
+connections:
+  -
+    - X_BNC_SCREW: [1]
+    - C.C1: [1]
+    - X_CLIP_VCC: [1]
+  -
+    - X_BNC_SCREW: [2]
+    - C.C1: [2]
+    - X_CLIP_GND: [1]
