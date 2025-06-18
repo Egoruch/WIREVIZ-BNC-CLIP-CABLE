@@ -60,7 +60,7 @@ connectors:
 cables:
 
   C:
-    colors: [RD, BK] # number of wires implicit in color list
+    colors: [RD, YE] # number of wires implicit in color list
     gauge: 0.25 mm2 # also accepts AWG as unit
     show_equiv: true # auto-calculate AWG equivalent from metric gauge
     length: 0.4 # length in m

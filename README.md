@@ -1,5 +1,5 @@
-# ESP32C3-NTC-ADC-ARDUINO
-* 📃 Full Article (with installing and using exmaple): 
+# WIREVIZ-BNC-CLIP-CABLE
+* 📃 Full Article (installing and using guide): https://refcircuit.com/articles/859-how-to-make-simple-cable-drawings-using-wireviz-detailed-manual.html
 ___
 # Dependency
 1) WireWiz: https://github.com/wireviz/WireViz
